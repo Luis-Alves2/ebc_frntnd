@@ -1,2 +1,2 @@
 # ebc_frntnd
-Dump info
+um arquivo nome.txt com o seu nome completo;
