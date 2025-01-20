@@ -60,13 +60,8 @@ section p{
 }
 
 .store-front{
-   /* margin-right: 32px;*/
-   max-width: 100%; /* Prevent images from overflowing */
-   height: auto; /* Maintain aspect ratio */
-   display: block; /* Fix inline spacing issues */
-   
-   margin-right: 32px;
-   max-width: 600px; /* Limit size for large screens */
+    margin-right: 32px;
+    max-width: 600px; /* Limit size for large screens */
 
 }
 
@@ -91,9 +86,7 @@ form button{
 }
 
 .brands-list img{
-    max-width: 100%; /* Prevent images from overflowing */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Fix inline spacing issues */
+    height: 24px;
 }
 .brands-list li{
     display: inline;
@@ -114,9 +107,7 @@ section h2 {
 }
 
 .social-media img{
-    max-width: 100%; /* Prevent images from overflowing */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Fix inline spacing issues */
+    height: 24px;
 }
 
 .social-media li {
@@ -135,6 +126,11 @@ section h2 {
 
 .contacting {
     display: flex;
+    justify-content: space-between;
+
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 24px; /* Add space between columns */
     justify-content: space-between;
 }
 
@@ -163,7 +159,7 @@ form button{
     cursor: pointer;
 }
 
-form button :hover{
+form button:hover{
     background-color: #2448aa;
 }
 
@@ -175,4 +171,27 @@ footer{
     background-color: #182C61;
     color: #ecf0f1;
     padding: 16px 0;
+}
+
+@media (max-width: 768px) {
+    header .container,
+    #contacts .container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+    }
+
+    .contacting {
+        flex-direction: column; /* Stack the contact sections */
+        gap: 16px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%; /* Full width for form elements */
+    }
+
+    section h2 {
+        font-size: 24px; /* Reduce heading size */
+    }
 }
