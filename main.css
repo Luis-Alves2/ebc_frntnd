@@ -46,7 +46,7 @@ section .container {
 }
 
 section {
-    padding: 24px 0;
+    padding: 48px 16px;
     color: #182C61;
 }
 
@@ -60,7 +60,13 @@ section p{
 }
 
 .store-front{
-    margin-right: 32px;
+   /* margin-right: 32px;*/
+   max-width: 100%; /* Prevent images from overflowing */
+   height: auto; /* Maintain aspect ratio */
+   display: block; /* Fix inline spacing issues */
+   
+   margin-right: 32px;
+   max-width: 600px; /* Limit size for large screens */
 
 }
 
@@ -85,7 +91,9 @@ form button{
 }
 
 .brands-list img{
-    height: 24px;
+    max-width: 100%; /* Prevent images from overflowing */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Fix inline spacing issues */
 }
 .brands-list li{
     display: inline;
@@ -99,13 +107,16 @@ section h2 {
 }
 
 .container {
-    width: 1280px;
-    width: 100%;
+    width: 1200px;
+    width: 90%;
     margin: 0 auto;
+    padding: 16px;
 }
 
 .social-media img{
-    height: 24px;
+    max-width: 100%; /* Prevent images from overflowing */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Fix inline spacing issues */
 }
 
 .social-media li {
