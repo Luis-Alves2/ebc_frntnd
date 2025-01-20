@@ -1,9 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "Proj1/**/*",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "Proj1" }
-    }
-  ]
+  "static": {
+    "directory": "Proj1"
+  }
 }
